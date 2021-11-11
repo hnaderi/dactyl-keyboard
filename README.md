@@ -2,7 +2,7 @@
 
 ## firmware
 there are several ways to build:
-- use artifact from ci build (preferred way)
+- use artifact from ci build (preferred way) [download latest build](https://gitlab.com/hnaderi/my-dactyl/-/jobs/artifacts/main/download?job=build)
 - build config online at [qmk online](https://config.qmk.fm) and download hex file.
 - run the ci script manually
 

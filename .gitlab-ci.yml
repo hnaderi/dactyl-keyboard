@@ -13,3 +13,6 @@ build:
       paths:
       - "*.hex"
       expire_in: never
+  only:
+    changes:
+      - "qmk-config.json"
