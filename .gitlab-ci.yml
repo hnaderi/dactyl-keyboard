@@ -1,0 +1,15 @@
+image:
+  name: qmkfm/qmk_firmware
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - qmk compile qmk-config.json
+    - cp /qmk_firmware/*.hex .
+  artifacts:
+      paths:
+      - "*.hex"
+      expire_in: never
