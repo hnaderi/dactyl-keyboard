@@ -1,0 +1,21 @@
+name: Release
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: qmkfm/qmk_firmware
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+          qmk compile qmk-config.json
+          cp /qmk_firmware/*.hex .
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: "*.hex"
