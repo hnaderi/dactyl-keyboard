@@ -1,6 +1,9 @@
-# Hossein Naderi's Dactyl keyboard
+# Hossein Naderi's keyboard
 
 ![](image.jpg)
+
+This is my customized mechanical keyboard based on [ markdhooper /
+CMD-dactyl-manuform ](https://github.com/markdhooper/CMD-dactyl-manuform/) which in turn is a fork of [/carbonfet/dactyl-manuform](https://github.com/carbonfet/dactyl-manuform) which is a fork of the [Dactyl-ManuForm](https://github.com/tshort/dactyl-keyboard). The Dactyl-Manuform is a fork of the [Dactyl](https://github.com/adereth/dactyl-keyboard) with the thumb cluster from [ManuForm](https://github.com/jeffgran/ManuForm). Some features from the Dactyl Manuform Mini are kept along with new features added. 
 
 ## Build
 
@@ -13,7 +16,7 @@ you can create your own custom keycaps from [here](./keycaps)
 
 ### Assemble
 
-TBD
+See [here](https://github.com/markdhooper/CMD-dactyl-manuform/tree/master/schematics)
 
 ## Program
 
@@ -22,7 +25,7 @@ as you like
 
 ### build firmware
 there are several ways to build:
-- use artifact from ci build (preferred way) [download latest build](https://gitlab.com/hnaderi/my-dactyl/-/jobs/artifacts/main/download?job=build)
+- use artifact from ci build (preferred way) 
 - build config online at [qmk online](https://config.qmk.fm) and download hex file.
 - run the ci script manually
 
