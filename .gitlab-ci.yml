@@ -1,5 +1,5 @@
 image:
-  name: qmkfm/qmk_firmware
+  name: qmkfm/qmk_cli
 
 stages:
   - build
@@ -7,6 +7,7 @@ stages:
 build:
   stage: build
   script:
+    - qmk setup --yes
     - qmk compile qmk-config.json
     - cp /qmk_firmware/*.hex .
   artifacts:
